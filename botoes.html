@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/open-iconic.min.css">
+</head>
+<body>
+    <!-- NAV -->
+    <header>
+        <nav class="navbar navbar-expand-lg nav-light bg-light">
+            <a href="" class="navbar-brand">SON</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Link 4</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropown-toggle" data-toggle="dropdown">
+                            Link Dropdown
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="" class="dropdown-item">1</a>
+                            <a href="" class="dropdown-item">2</a>
+                            <a href="" class="dropdown-item">3</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- END NAV -->
+    <!-- GRID -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="mt-4 mb-4">Welcome to School of Net</h1>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./img/img-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- END GRID -->
+    <!-- POSIOCIONAMENTO -->
+    <div class="container">
+        <div class="row" style="min-height: 12em; background-color: blueviolet;">
+            <div class="col-6 align-self-start" style="border: 1px solid #fff">Coluna 1</div>
+            <div class="col-6 align-self-end" style="border: 1px solid #fff">Coluna 2</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center" style="min-height: 12em; background-color: red;">
+            <div class="col-3" style="border: 1px solid #fff">Coluna 1</div>
+            <div class="col-3" style="border: 1px solid #fff">Coluna 2</div>
+        </div>
+    </div>
+    <!-- END POSIOCIONAMENTO -->
+    <!-- FORMULÁRIOS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="">Name:</label>
+                                <input type="text" class="form-control" name="name" placeholder="Enter your name:">
+                                <small class="form-text text-muted">Puts your full name is my helper text</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="email" placeholder="Enter your email:">
+                                <small class="form-text text-muted">Puts your best email here</small>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select name="subject" class="form-control">
+                                    <option value="">Option 1</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message:</label>
+                                <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                            </diV>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input">
+                                <label for="" class="form-check-label">Send reply to email?</label>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Send!</button>
+                                <button type="submit" class="btn btn-outline-primary">Send!</button>
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- END FORMULÁRIOS -->
+
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>  
